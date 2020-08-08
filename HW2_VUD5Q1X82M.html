@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Date</title>
+</head>
+
+<body>
+    <h2 id="us">Before Click</h2>
+    
+    <button id="button" >
+        Get Date
+    </button>
+    <h2 id="hi"></h2>
+    
+</body>
+<script>
+    document.getElementById("button").addeventlistener("click", function()
+    {
+        document.getElementById('hi').innerHTML = Date()
+        document.getElementById('us').innerHTML = 'After click'
+
+    })
+</script>
+</html>
